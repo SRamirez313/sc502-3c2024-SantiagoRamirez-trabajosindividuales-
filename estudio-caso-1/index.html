@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Estudiantes</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Agregar estudiante</h2>
+
+            <form id="formulario" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos">
+
+                <label for="nota">Nota (0 - 100):</label>
+                <input type="number" id="nota">
+
+                <button type="submit">Agregar</button>
+            </form>
+
+            <p id="mensaje-error"></p>
+        </section>
+
+        <section>
+            <h2>Lista de estudiantes</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-estudiantes">
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Resumen</h2>
+            <p id="mayor-nota"></p>
+            <p id="promedio"></p>
+            <p id="menor-nota"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Estudio de caso 1 - SC-502 Ambiente Web Cliente Servidor - Santiago Ramirez</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
